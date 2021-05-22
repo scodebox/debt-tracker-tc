@@ -12,9 +12,10 @@ double calculateInterest(double amount, var date, double interestRate) {
 
 void main() {
   var amountList = [
-    50.0,
+    calculateInterest(50.0, DateTime(2020, 11, 30), 1),
     calculateInterest(15.0, DateTime(2021, 5, 18), 1),
-    calculateInterest(18000.0, DateTime(2019, 1, 1), 0.0263)
+    calculateInterest(18000.0, DateTime(2019, 1, 1), 0.0263),
+    30.0
   ];
 
   var total = 0.0;
@@ -83,6 +84,7 @@ void main() {
             Name('Arnab Ghosh', amountList[0]),
             Name('Suvam Basak', amountList[1]),
             Name('Debraj Ghosh', amountList[2]),
+            Name('Vodu', amountList[3]),
           ],
         ),
       ),
